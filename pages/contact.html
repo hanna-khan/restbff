@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <header class="header">
+        <header class="header">
         <div class="container">
             <div class="header-content">
                 <div class="logo-container">
@@ -18,23 +18,24 @@
                         <img src="../images/logo.png" alt="REST Foundation Logo" class="logo">
                     </a>
                 </div>
-                <div><a href="https://www.zeffy.com/en-US/donation-form/ready-to-help-families-escape-generational-poverty" class="btn btn-primary" data-key="donate_btn">Donate Now</a></div>
-                <nav class="main-nav">
+                <nav class="main-nav" aria-label="Primary">
                     <ul class="nav-menu">
                         <li><a href="../index.html" data-key="nav_home">Home</a></li>
                         <li><a href="about.html" data-key="nav_about">About Us</a></li>
                         <li><a href="services.html" data-key="nav_services">Services</a></li>
+                        <li><a href="gallery.html" data-key="nav_gallery">Gallery</a></li>
                         <li><a href="contact.html" class="active" data-key="nav_contact">Contact</a></li>
                         <li><a href="get-involved.html" data-key="nav_get_involved">Get Involved</a></li>
                     </ul>
-                    <div class="lang-switcher">
-                        <button class="btn-lang" data-lang="en">EN</button>
-                        <button class="btn-lang" data-lang="ur">اردو</button>
-                    </div>
-                    <div class="hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="header-actions">
+                        <div class="lang-switcher">
+                            <button class="btn-lang" data-lang="en" type="button">EN</button>
+                            <button class="btn-lang" data-lang="ur" type="button">اردو</button>
+                        </div>
+                        <a href="https://www.zeffy.com/en-US/donation-form/ready-to-help-families-escape-generational-poverty" class="btn btn-accent" data-key="donate_btn">Donate Now</a>
+                        <button class="hamburger" type="button" aria-label="Open menu">
+                            <span></span><span></span><span></span>
+                        </button>
                     </div>
                 </nav>
             </div>
@@ -201,6 +202,7 @@
                     <ul class="footer-links">
                         <li><a href="../index.html" data-key="nav_home">Home</a></li>
                         <li><a href="about.html" data-key="nav_about">About Us</a></li>
+                        <li><a href="gallery.html" data-key="nav_gallery">Gallery</a></li>
                         <li><a href="services.html" data-key="nav_services">Services</a></li>
                         <li><a href="contact.html" data-key="nav_contact">Contact</a></li>
                         <li><a href="privacy.html" data-key="nav_privacy">Privacy Policy</a></li>
@@ -275,7 +277,9 @@
         </div>
     </footer>
 
-    <script src="../js/translations.js"></script>
+        <script src="../js/translations.js"></script>
+    <script src="../js/i18n-extend.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/ui-enhance.js"></script>
 </body>
 </html>
